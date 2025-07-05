@@ -74,5 +74,42 @@ img {
 
 .profile-user-stting,.profile-stats,
 .profile-bio{
-    
+    float: left;
+    width:calc(66.66% - 2rem) ;
+
+}
+.profile-user-sttings{
+    margins: top 1.1rem;
+}
+
+.profile-user-name{
+    display: inline-flex;
+    font-size:3.2rem;
+    font-weight: 300;
+}
+
+.profile-edit-btn{
+    font-size: 1.4em;
+    line: hight 1.8em;
+    borderL:0.1rem; solid #dbdbdb 
+    border-radius: 0.3rem;
+    padding: 0 2.4rem;
+    margin-left:2rem;
+}
+
+.profile-setting-btn{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.profile-stats{
+    margin: top 2.3rem;
+}
+
+.profile-stats li{
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 4rem;
+    cursor: pointer;
 }
