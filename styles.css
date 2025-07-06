@@ -130,3 +130,30 @@ img {
 .profile-edit-btn{
     font-weight: 600;
 }
+
+.gallarey{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem-1rem;
+    padding-bottom: 3rem;
+}
+
+.gallarey-item{
+    position:relative
+    flex:1 0 22rem;
+    margin:1rem;
+    color: #fff;
+    cursor: pointer;
+
+}
+.gallarey-item-havor .gallarey-item-info,
+.gallarey-item:focus, .gallarey-item-info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100;
+    height: 100;
+
+}
