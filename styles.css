@@ -152,61 +152,51 @@ img {
   transition: transform 0.3s ease;
 }
 
-.gallarey-item{
-    position:relative;
-    flex:1 0 22rem;
-    margin:1rem;
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
     color: #fff;
     cursor: pointer;
-
 }
-.gallarey-item:hover .gallarey-item-info,
-.gallarey-item:focus, .gallarey-item-info{
-    display:grid;
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
-    width: 100;
-    height: 100;
-    background: rgba(0,0,0,3);
-    font-size: 16px;
-	opacity: 0;
-	transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
 
-.gallery-item.show-info .gallery-item-info {
-	opacity: 1;
-}
-
-
-.gallarey-item-info{
+.gallarey-item-info {
     display: none;
 }
-
-.gallarey-item-info li{
+.gallery-item-info li {
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 600;
 }
 
-.gallarey-item-likes{
+.gallarey-item-likes {
     margin-right: 2.2rem;
-    opacity: 1;
 }
 
-.gallarey-item-type{
-    position: absolute;
-    top:1rem;
-    right:1rem;
-    font-size: 2.5rem;
-    text-shadow: 0.2rem 0.2rem;color: 0,0,0,0,3;
+.gallery-item-type {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .fa-clone,
 .fa-comment {
-    transform: rotateY(180dg);
-    opacity: 1;
+    transform: rotateY(180deg);
 }
 
 .gallarey-image{
@@ -224,6 +214,12 @@ img {
   margin: 0 auto;
   animation: loader 500ms linear infinite;
 }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 @media screen and (max-width:768 rem){
 .profile{
@@ -282,4 +278,5 @@ img {
     padding: 1rem;
     border-top: 0.1rem solid #dadada;
     border-bottom: o.1rem solid #dadada;
+
 }
